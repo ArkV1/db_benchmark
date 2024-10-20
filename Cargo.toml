@@ -1,0 +1,17 @@
+[package]
+name = "db_benchmark"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nosql_db = { path = "../nosql_db" }
+
+[dev-dependencies]
+criterion = "0.3"
+redis = "0.21.0"
+rocksdb = "0.17.0"
+leveldb = "0.8.6"
+
+[[bench]]
+name = "database_benchmark"
+harness = false
