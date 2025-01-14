@@ -9,9 +9,9 @@ nosql_db = { path = "../nosql_db" }
 [dev-dependencies]
 criterion = "0.3"
 redis = "0.21.0"
-rocksdb = "0.17.0"
-leveldb = "0.8.6"
+tokio = { version = "1.0", features = ["full"] }
 
 [[bench]]
 name = "database_benchmark"
 harness = false
+
